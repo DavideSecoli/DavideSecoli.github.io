@@ -13,7 +13,7 @@ body, html {
 
 header {
     background-color: transparent; /* Removed the blue background */
-    color: white;
+    color: white; /* Ensures text in the header is white */
     padding: 20px 0;
     width: 100%;
     position: absolute;
@@ -21,8 +21,13 @@ header {
     transform: translateY(-50%);
 }
 
+header h1 {
+    color: white; /* Make the "Inferential Research" text color white */
+    font-size: 120%; /* Increase the font size by 20% */
+}
+
 .main-image {
-    display: none; /* Hide the image element since the background is now the full page image */
+    display: none; /* Since the image is used as a background, this is not displayed */
 }
 
 footer {
