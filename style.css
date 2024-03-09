@@ -1,26 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center align text for simplicity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('index.png') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-color: #007bff;
+    background-color: transparent; /* Removed the blue background */
     color: white;
     padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-image {
-    max-width: 100%; /* Make image responsive */
-    height: auto;
-    margin: 20px 0; /* Add some space around the image */
+    display: none; /* Hide the image element since the background is now the full page image */
 }
 
 footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 footer a {
